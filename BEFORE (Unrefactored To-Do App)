@@ -1,0 +1,28 @@
+let input = document.getElementById("input");
+let btn = document.getElementById("btn");
+let list = document.getElementById("list");
+
+btn.onclick = function () {
+  if (input.value !== "") {
+    let li = document.createElement("li");
+    li.textContent = input.value;
+    list.appendChild(li);
+    input.value = "";
+  }
+};
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo App</title>
+</head>
+<body>
+  <h1>My Tasks</h1>
+  <input id="input" type="text" />
+  <button id="btn">Add</button>
+  <ul id="list"></ul>
+
+  <script src="todo-unrefactored.js"></script>
+</body>
+</html>
