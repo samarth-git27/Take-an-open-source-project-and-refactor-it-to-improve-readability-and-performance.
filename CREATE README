@@ -1,0 +1,17 @@
+# Refactored To-Do List App
+
+A basic to-do list that has been refactored for:
+- Better readability
+- Improved structure
+- Clean UI & UX
+- Optional performance tweaks
+
+## Features
+
+- Add tasks via button or Enter key
+- Clean modular code
+- Styled using CSS
+
+## Run
+
+Just open `index.html` in any browser
