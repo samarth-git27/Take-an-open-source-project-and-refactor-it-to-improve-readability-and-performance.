@@ -1,0 +1,27 @@
+// Get DOM elements
+const taskInput = document.getElementById("taskInput");
+const addBtn = document.getElementById("addBtn");
+const taskList = document.getElementById("taskList");
+
+// Utility: Create and append new task
+function addTask(taskText) {
+  const taskItem = document.createElement("li");
+  taskItem.textContent = taskText;
+  taskList.appendChild(taskItem);
+}
+
+// Event handler for button click
+addBtn.addEventListener("click", () => {
+  const inputValue = taskInput.value.trim();
+  if (inputValue !== "") {
+    addTask(inputValue);
+    taskInput.value = "";
+  }
+});
+
+// Optional: Add Enter key support
+taskInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addBtn.click();
+  }
+});
