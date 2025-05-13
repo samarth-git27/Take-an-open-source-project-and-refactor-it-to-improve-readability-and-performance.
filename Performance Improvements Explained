@@ -1,0 +1,7 @@
+| Improvement                    | Benefit                                 |
+| ------------------------------ | --------------------------------------- |
+| Used `trim()`                  | Avoids empty task additions             |
+| Modular `addTask()` function   | Easier to maintain or extend            |
+| Removed inline `onclick`       | Better separation of logic and markup   |
+| Enter key support added        | Better UX                               |
+| Optional debounce can be added | Prevents rapid spam input in large apps |
